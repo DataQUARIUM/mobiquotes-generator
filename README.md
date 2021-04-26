@@ -4,4 +4,4 @@ This PHP script makes use of Twitter API
 
 <b>URL</b>: https://twitter.com/mobiquotes
 
-![alt tag](https://raw.githubusercontent.com/Softdonkey/mobiquotes/main/mobiscreenshot.png)
+![alt tag](https://raw.githubusercontent.com/fsiamp/mobiquotes/main/mobiscreenshot.png)
