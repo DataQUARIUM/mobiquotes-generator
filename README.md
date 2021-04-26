@@ -1,5 +1,5 @@
 # MobiQuotes
-Twitter bot which posts new quotes every minute<Br>
+Twitter bot which automatically posts popular quotes<Br>
 This PHP script makes use of Twitter API
 
 <b>URL</b>: https://twitter.com/mobiquotes
