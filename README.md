@@ -1,6 +1,8 @@
 # MobiQuotes
-Twitter bot which automatically posts popular quotes<Br>
-This PHP script makes use of Twitter API
+GUI application which enables manual posting of popular quotes through Twitter API.
+Twitter bot is also included for automated generation and uploading of such quotes on Twitter<Br>
+
+GUI execution requires tkinter module and python3.
 
 <b>URL</b>: https://twitter.com/mobiquotes
 
