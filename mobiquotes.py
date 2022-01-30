@@ -19,33 +19,33 @@ def main():
     panel = Label(window, image = img)
     panel.pack(side = "top", fill = "both", expand = "no")
 
-    entry1 = tk.Entry()
-    entry1.insert(0, 'Consumer Key')
-    entry1.pack(fill='x')
+    consumerKey = tk.Entry()
+    consumerKey.insert(0, 'Consumer Key')
+    consumerKey.pack(fill='x')
 
-    entry2 = tk.Entry()
-    entry2.insert(0, 'Consumer Secret')
-    entry2.pack(fill='x')
+    consumerSecret = tk.Entry()
+    consumerSecret.insert(0, 'Consumer Secret')
+    consumerSecret.pack(fill='x')
 
-    entry3 = tk.Entry()
-    entry3.insert(0, 'OAuth Token')
-    entry3.pack(fill='x')
+    oauthToken = tk.Entry()
+    oauthToken.insert(0, 'OAuth Token')
+    oauthToken.pack(fill='x')
 
-    entry4 = tk.Entry()
-    entry4.insert(0, 'OAuth Secret')
-    entry4.pack(fill='x')
+    oauthSecret = tk.Entry()
+    oauthSecret.insert(0, 'OAuth Secret')
+    oauthSecret.pack(fill='x')
 
     quote = Text(window, height = 13, width = 52)
     quote.config(highlightbackground="lightgrey", highlightthickness="1",font=("Helvetica", 14, "normal"))
-    quote.insert(tk.END, " Quote")
+    quote.insert(tk.END, " Message")
     quote.pack(fill='x')
 
     def submit_name():
         twitter_auth_keys = {
-            "consumer_key"        : entry1.get(),
-            "consumer_secret"     : entry2.get(),
-            "access_token"        : entry3.get(),
-            "access_token_secret" : entry4.get()
+            "consumer_key"        : consumerKey.get(),
+            "consumer_secret"     : consumerSecret.get(),
+            "access_token"        : oauthToken.get(),
+            "access_token_secret" : oauthSecret.get()
         }
 
         auth = tweepy.OAuthHandler(
@@ -60,8 +60,8 @@ def main():
         tweet = quote.get("1.0",'end-1c')
         status = api.update_status(status=tweet)
 
-    submit= tk.Button(window, text= "Tweet Quote",command=submit_name)
-    submit.pack(pady=15, fill='x')
+    submit= tk.Button(window, text= "Post Quote",command=submit_name)
+    submit.pack(pady=15, fill='y')
 
     window.mainloop()
  
