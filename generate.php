@@ -1,10 +1,10 @@
 <?php
 
 
-$consumerKey = '9jFgRu4natCndfucJ06bZQ';
-$consumerSecret = '2XWCrtxHGL0Ba21LpvnOsYjCGpjRWinKEt2A1ClG4';
-$oAuthToken = '567427617-88ncjIVrBRX08ZXB42I7hqcVldYHGBmMXxdV5jhq';
-$oAuthSecret = '5oQRhRcjqPiqSFUlRJIEbyd5p0cdCpV6bDkf0cdk';
+$consumerKey = '<CONSUMER_KEY>';
+$consumerSecret = '<CONSUMER_SECRET>';
+$oAuthToken = '<OAUTH_TOKEN>';
+$oAuthSecret = '<OAUTH_SECRET>';
 
 require_once('twitteroauth.php');
 
