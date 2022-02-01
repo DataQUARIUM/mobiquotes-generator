@@ -37,7 +37,11 @@ def main():
 
     quote = Text(window, height = 13, width = 52)
     quote.config(highlightbackground="lightgrey", highlightthickness="1",font=("Helvetica", 14, "normal"))
-    quote.insert(tk.END, " Message")
+
+    lines = open('quotes.txt').read().splitlines()
+    text =random.choice(lines)
+
+    quote.insert(tk.END, text)
     quote.pack(fill='x')
 
     def submit_name():
@@ -60,8 +64,14 @@ def main():
         tweet = quote.get("1.0",'end-1c')
         status = api.update_status(status=tweet)
 
-    submit= tk.Button(window, text= "Post Quote",command=submit_name)
-    submit.pack(pady=15, fill='y')
+        lines = open('quotes.txt').read().splitlines()
+        text =random.choice(lines)
+        quote.delete("1.0", tk.END)
+        quote.insert(tk.END, " " + text)
+        quote.pack(fill='x')
+
+    submit= tk.Button(window, text= "Upload Quote",command=submit_name)
+    submit.pack(pady=15, fill='x')
 
     window.mainloop()
  
