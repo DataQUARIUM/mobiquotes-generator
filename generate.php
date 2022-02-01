@@ -1,10 +1,10 @@
 <?php
 
 
-$consumerKey = '<CONSUMER_KEY>';
-$consumerSecret = '<CONSUMER_SECRET>';
-$oAuthToken = '<OAUTH_TOKEN>';
-$oAuthSecret = '<OAUTH_SECRET>';
+$consumerKey = $argv[0];
+$consumerSecret = $argv[1];
+$oAuthToken = $argv[2];
+$oAuthSecret = $argv[3];
 
 require_once('twitteroauth.php');
 
