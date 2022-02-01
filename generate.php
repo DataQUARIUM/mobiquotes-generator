@@ -17,7 +17,7 @@ $handle = fopen("quotes.txt", "r") or die("Couldn't get handle");
        $tweet = new TwitterOAuth($consumerKey, $consumerSecret, $oAuthToken, $oAuthSecret);
        $message = "$buffer";
        $tweet->post('statuses/update', array('status' => "$message"));
-       sleep(73);
+       sleep(36);
 
     }
     fclose($handle);
