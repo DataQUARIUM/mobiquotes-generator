@@ -47,7 +47,6 @@ textarea {
   overflow-x: hidden;
   scrollbar-width: none;
   background-color: #fff !important;
-  -webkit-text-fill-color: #000;
   opacity: 1;
   position: relative;
   top: -1.2vh;
@@ -80,7 +79,6 @@ input {
   line-height: 1.4em;
   text-align: left;
   background-color: #fff !important;
-  -webkit-text-fill-color: #000;
   opacity: 1;
   position: relative;
   top: 1.2vh;
@@ -123,4 +121,21 @@ button:active {
 button:focus {
   background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
   background-color:#bab1ba;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: lightgray;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: lightgray;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: lightgray;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: lightgray;
 }
