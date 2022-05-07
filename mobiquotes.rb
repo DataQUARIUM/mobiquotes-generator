@@ -43,3 +43,5 @@ sleep 5
 puts "You deserve a longer letter than this"
 sleep 5
 puts "Reading is a technology for perspective-taking. When someone else's thoughts are in your head, you are observing the world from that person's vantage point."
+sleep 5
+puts "If you make peace without defense power,then you should be really ready to be ruled."
